@@ -5,11 +5,9 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom"; // ✅ import
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      {" "}
-      {/* ✅ Wrap your app here */}
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    {" "}
+    {/* ✅ Wrap your app here */}
+    <App />
+  </BrowserRouter>
 );

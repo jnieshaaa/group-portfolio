@@ -1,20 +1,19 @@
 import React from "react";
-import ProjectCard from "../components/ProjectCard";
-import projects from "../data/ProjectList";
 import techItems from "../data/TechStackItems";
 import { TechStack } from "../components/effects/TechStackCard";
 import featuredProjects from "../data/featuredProjects";
-import { StickyScroll } from "../components/effects/StickyScroll";
 import FeaturedProjectsSection from "./section/FeaturedProjectsSection";
+import FocusSection from "./section/WeDo";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Main() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-midnight via-indigoDeep to-lavender">
+      <Header />
+
       {/* Hero Section */}
-      <section
-        id="home"
-        className="h-screen flex flex-col justify-center items-center text-center p-8"
-      >
+      <section className="h-screen flex flex-col justify-center items-center text-center p-8">
         <h2 className="text-4xl md:text-5xl font-bold text-lavender mb-4 drop-shadow">
           Welcome to My Portfolio
         </h2>
@@ -23,6 +22,8 @@ function Main() {
           down to explore my work.
         </p>
       </section>
+
+      <FocusSection />
 
       {/* Projects Section */}
       <FeaturedProjectsSection featuredProjects={featuredProjects} />
@@ -41,6 +42,8 @@ function Main() {
 
         <TechStack items={techItems} />
       </section>
+
+      <Footer />
     </div>
   );
 }

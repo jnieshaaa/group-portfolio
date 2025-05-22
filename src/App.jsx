@@ -8,9 +8,7 @@ function App() {
   return (
     <>
       <ClickEffect />
-      <Header />
       <Main />
-      <Footer />
     </>
   );
 }

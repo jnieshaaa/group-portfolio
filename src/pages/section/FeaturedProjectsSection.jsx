@@ -58,7 +58,7 @@ export default function FeaturedProjectsSection({ featuredProjects }) {
 
   return (
     <section
-      id="featured"
+      id="projects"
       ref={sectionRef}
       style={{ backgroundColor: bgColor }}
       className="w-full min-h-screen px-4 md:px-24 py-5 transition-colors duration-300 overflow-hidden"
